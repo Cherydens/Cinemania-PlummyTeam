@@ -1,1 +1,0 @@
-{"mappings":"","sources":["src/index.js","src/js/service/movieApiService.js"],"sourcesContent":["import './js/service/movieApiService';\n","import axios from 'axios';\n\nconst API_KEY = '345007f9ab440e5b86cef51be6397df1';\nconst BASE_URL = 'https://developers.themoviedb.org/3/';\n"],"names":[],"version":3,"file":"catalog.04cd81b4.js.map"}
