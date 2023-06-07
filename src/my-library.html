@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <title>Cinemania Home</title>
+    <title>Cinemania My Library</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -15,13 +15,16 @@
     <a href="./my-library.html">My Library</a>
 
     <!-- Header -->
-    <include src="./partials/home/home-header.html"></include>
+    <include src="./partials/my-library/my-library-header.html"></include>
 
     <!-- Main -->
     <main>
-      <include src="./partials/home/home-hero.html"></include>
-      <include src="./partials/home/home-weekly-trends.html"></include>
-      <include src="./partials/home/home-upcoming-this-month.html"></include>
+      <include src="./partials/my-library/my-library-hero.html"></include>
+      <include
+        src="./partials/my-library/my-library-search-form.html"
+      ></include>
+      <include src="./partials/my-library/my-library-film-list.html"></include>
+      <include src="./partials/my-library/my-library-pagination.html"></include>
     </main>
 
     <!-- Footer -->
