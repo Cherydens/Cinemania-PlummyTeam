@@ -7,7 +7,8 @@
         ${t}
         </h2>
         <div class="rating">
-          ${e}
+        <progress max="10" value="${e}"></progress>
+          
         </div>
         <p class="home-hero-text film-overview">
           ${r}
@@ -18,4 +19,4 @@
         <button type="button" class="more-details-btn">More details</button>
       </div>    
     `}(n)}catch(t){console.error(t.message),document.querySelector(".js-default-home-hero").classList.remove("visually-hidden")}}();
-//# sourceMappingURL=catalog.cf634079.js.map
+//# sourceMappingURL=catalog.4b11beeb.js.map
