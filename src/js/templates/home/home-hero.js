@@ -13,7 +13,8 @@ function createHomeHeroMarkup({
         ${title}
         </h2>
         <div class="rating">
-          ${vote_average}
+        <progress max="10" value="${vote_average}"></progress>
+          
         </div>
         <p class="home-hero-text film-overview">
           ${overview}
