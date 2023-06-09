@@ -1,5 +1,14 @@
 import './js/service/movieApiService';
-import { fetchDayTrends } from './js/service/movieApiService';
+import {
+  fetchDayTrends,
+  fetchWeekTrends,
+  fetchUpcomingThisMonth,
+  fetchMovieById,
+  fetchMovieBySearchQuery,
+  fetchMovieBySearchQueryAndYear,
+  fetchMovieVideosById,
+  fetchGenresList,
+} from './js/service/movieApiService';
 import { createHomeHeroMarkup } from './js/templates/home/home-hero';
 
 const refs = {
@@ -7,13 +16,13 @@ const refs = {
 };
 
 onHomeLoad();
-
+// 76600 "Avatar";
 async function onHomeLoad() {
   try {
-    const response = await fetchDayTrends();
+    const response = await fetchWeekTrends();
     console.log(response);
-    const randomNumber = getRandomNumber(response.data.results.length);
-    const heroFilm = response.data.results[randomNumber];
+    const randomNumber = getRandomNumber(response.results.length);
+    const heroFilm = response.results[randomNumber];
     console.log(heroFilm);
     refs.homeHeroEl.innerHTML = createHomeHeroMarkup(heroFilm);
   } catch (error) {

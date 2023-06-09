@@ -4,9 +4,12 @@ function createHomeHeroMarkup({
   overview,
   backdrop_path,
 }) {
+  const imagePath = !!backdrop_path
+    ? 'https://image.tmdb.org/t/p/original' + backdrop_path
+    : '../../images/home/hero.jpg';
   return `
       <div class="back-drop-img-container">
-        <img src="https://image.tmdb.org/t/p/original${backdrop_path}" alt="${title}" class="back-drop-img" />
+        <img src="${imagePath}" alt="${title}" class="back-drop-img" />
       </div>
       <div class="home-hero-info">
         <h2 class="title home-hero-title">
